@@ -1,4 +1,39 @@
-# sql
-/db.sqlite3
-# venv
-/myenv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.myenv
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pid
+*.swp
+*.swo
+*.swn
+*.coverage
+*.egg-info/
+*.eggs/
+*.sqlite3
+db.sqlite3
+*.db
+
+
+
+# Windows
+Thumbs.db
+ehthumbs.db

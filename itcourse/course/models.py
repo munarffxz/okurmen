@@ -1,5 +1,6 @@
 # course/models.py
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 
 class Course(models.Model):
     title = models.CharField(max_length=200)
@@ -29,3 +30,9 @@ class MasterClass(models.Model):
 
     def __str__(self):
         return self.title
+    
+    
+    
+class NameNumber(models.Model):
+    name = models.CharField(max_length=50)
+    number = PhoneNumberField(max_length=13)

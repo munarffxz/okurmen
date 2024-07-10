@@ -3,8 +3,14 @@ from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from .models import MasterClass, Technology, Course
-from .serializers import MasterClassSerializer, TechnologySerializer, CourseSerializer
+from .models import MasterClass, Technology, Course,NameNumber
+from .serializers import MasterClassSerializer, TechnologySerializer, CourseSerializer, NameNumberClassSerializer
+
+
+class NameNumberViewSet(viewsets.ModelViewSet):
+    queryset = NameNumber.objects.all()
+    serializer_class = NameNumberClassSerializer
+
 
 class TechnologyViewSet(viewsets.ModelViewSet):
     queryset = Technology.objects.all()
